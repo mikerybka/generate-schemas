@@ -42,6 +42,8 @@ func getSchema(addr string) (*Schema, error) {
 }
 
 func writeSchema(dir string, name string, schema *Schema) error {
+	// TODO: Write Go file
+	// TODO: Write TypeScript file
 	b, _ := json.Marshal(schema)
 	fmt.Println(string(b))
 	return nil
